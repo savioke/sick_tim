@@ -264,6 +264,7 @@ int SickTimCommonUsb::sendSOPASCommand(const char* request, std::vector<unsigned
 {
   if (device_handle_ == NULL) {
     ROS_ERROR("LIBUSB - device not open");
+    sleep(1);
     diagnostics_.broadcast(diagnostic_msgs::DiagnosticStatus::ERROR, "LIBUSB - device not open.");
     return EXIT_FAILURE;
   }

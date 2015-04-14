@@ -56,13 +56,19 @@ int main(int argc, char **argv)
   else
     s = new sick_tim::SickTimCommonUsb(parser);
 
-  int result = s->init();
-  while (ros::ok() && (result == EXIT_SUCCESS))
+  int result = EXIT_FAILURE;
+  while (ros::ok())
   {
-    ros::spinOnce();
-    result = s->loopOnce();
+    // Atempt to connect/reconnect
+    result = s->init();
+
+    while(ros::ok() && (result == EXIT_SUCCESS)){
+      ros::spinOnce();
+      result = s->loopOnce();
+    }
   }
 
   delete s;
+  delete parser;
   return result;
 }
