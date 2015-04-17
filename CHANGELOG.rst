@@ -2,6 +2,15 @@
 Changelog for package sick_tim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Parameterized the timeout variable
+  for corner cases where the TIM and computer are powered at the same
+  time, and the ROS node is launched before the TIM551 device is ready.
+  Increase timelimit to avoid this condition.
+  Added a TCP-specific launch file.
+* Contributors: jeff-o
+
 0.0.4 (2015-03-16)
 ------------------
 * Tim561: Make sick_tim551 node work with TiM561.
