@@ -2,8 +2,8 @@
 Changelog for package sick_tim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+100.0.5 (2015-04-16)
+--------------------
 * Parameterized the timeout variable
   for corner cases where the TIM and computer are powered at the same
   time, and the ROS node is launched before the TIM551 device is ready.
