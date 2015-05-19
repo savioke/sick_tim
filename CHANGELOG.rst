@@ -2,8 +2,14 @@
 Changelog for package sick_tim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-0.0.5 (2015-05-06)
-------------------
+100.0.5 (2015-04-16)
+--------------------
+* Parameterized the timeout variable
+  for corner cases where the TIM and computer are powered at the same
+  time, and the ROS node is launched before the TIM551 device is ready.
+  Increase timelimit to avoid this condition.
+  Added a TCP-specific launch file.
+* Contributors: jeff-o
 * Auto retry USB and TCP connections due to any reason; see `#25 <https://github.com/uos/sick_tim/issues/25>`_
 * Parameterized TCP timeout
 * Contributors: Chad Rockey, Martin Günther, Jochen Sprickerhof, Jeff Schmidt
