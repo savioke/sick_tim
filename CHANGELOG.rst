@@ -2,8 +2,8 @@
 Changelog for package sick_tim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+100.0.6 (2015-05-19)
+--------------------
 * Merge
 * 0.0.5
 * updated changelog
