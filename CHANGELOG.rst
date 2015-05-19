@@ -2,6 +2,17 @@
 Changelog for package sick_tim
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Merge
+* 0.0.5
+* updated changelog
+* sick_tim_common_tcp: simplify reconnection logic
+* Merge pull request `#25 <https://github.com/savioke/sick_tim/issues/25>`_ from chadrockey/autoretry
+  Auto retry USB and ethernet connections due to any reason.
+* Auto retry USB and ethernet connections due to any reason.
+* Contributors: Chad Rockey, Martin Günther
+
 100.0.5 (2015-04-16)
 --------------------
 * Parameterized the timeout variable
